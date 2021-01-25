@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import userReducer from '../features/userSlice';
 
+//userSliceから受け取り
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+   user: userReducer,//reducerの任意の名前
   },
 });
 
